@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crinkulo much</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <div id="message"></div>
+        <nav>
+    <ul class="menu">
+        <li>
+            <a href="#">Football boots <span class="arrow">&#9660;</span></a>
+            <ul class="dropdown">
+                <li><a href="#">Classic Boots</a></li>
+                <li><a href="#">Modern Boots</a></li>
+                <li><a href="#">Kids Boots</a></li>
+                <li><a href="#">Pro Boots</a></li>
+                <li><a href="#">Limited Edition</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Training Wear <span class="arrow">&#9660;</span></a>
+            <ul class="dropdown">
+                <li><a href="#">Jackets</a></li>
+                <li><a href="#">Trousers</a></li>
+                <li><a href="#">T-Shirts</a></li>
+                <li><a href="#">Shorts</a></li>
+                <li><a href="#">Socks</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Equipment <span class="arrow">&#9660;</span></a>
+            <ul class="dropdown">
+                <li><a href="#">Balls</a></li>
+                <li><a href="#">Goalkeeper Gloves</a></li>
+                <li><a href="#">Training Cones</a></li>
+                <li><a href="#">Shin Guards</a></li>
+                <li><a href="#">Gym Bags</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Lifestyle <span class="arrow">&#9660;</span></a>
+            <ul class="dropdown">
+                <li><a href="#">Casual Wear</a></li>
+                <li><a href="#">Sneakers</a></li>
+                <li><a href="#">Hats & Caps</a></li>
+                <li><a href="#">Watches</a></li>
+                <li><a href="#">Sunglasses</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+<div class="auth">
+    <div id="loginForm">
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+        <a href="#" onclick="toggleAuth('registerForm', 'loginForm')">Register</a>
+    </div>
+        <input type="text" id="regUsername" placeholder="Username">
+        <input type="password" id="regPassword" placeholder="Password">
+        <input type="email" id="regEmail" placeholder="Email">
+        <button onclick="register()">Register</button>
+        <a href="#" onclick="toggleAuth('loginForm', 'registerForm')">Login</a>
+    </div>
+    <button id="logoutButton" onclick="logout()" style="display: none;">Logout</button>
+</div>
+<div id="message-section"></div>
+    </header>
+
+    <main>
+        <section class="about">
+    <div class="flip-container">
+        <div class="flipper">
+            <div class="front">
+                <div class="about-title">
+                    <h1>About Crinkulo much</h1>
+                </div>
+            </div>
+            <div class="back">
+                <div class="about-content">
+                    <p>Crinkulo much on spetsialiseerunud jalgpalli varustuse pakkumisele alates 2023. aastast. Meie eesmärk on pakkuda kvaliteetseid tooteid ja suurepärast klienditeenindust.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+        <section class="products">
+            <div class="product">
+                <img src="image1.png" alt="Product 1">
+            </div>
+            <div class="product">
+                <img src="image2.png" alt="Product 2">
+            </div>
+            <div class="product">
+                <img src="image3.jpg" alt="Product 3">
+            </div>
+            <div class="product">
+                <img src="image4.png" alt="Product 4">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact: Ivar Levin</p>
+        <p>Phone: +37256666666</p>
+        <p>Address: Kingdom rd 112, Tartu, Estonia</p>
+    </footer>
+</body>
+</html>
